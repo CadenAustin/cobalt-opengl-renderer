@@ -7,4 +7,12 @@ edition = "2021"
 
 [dependencies]
 tobj = "*"
-gltf = "*"
+gltf = {version = "*", features = ["names"]}
+gl = "*"
+nalgebra = "*"
+renderdoc = "*"
+
+[dependencies.sdl2]
+version = "0.35"
+default-features = false
+features = ["bundled"]
